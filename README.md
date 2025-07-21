@@ -1,6 +1,6 @@
-# Landing Page – Tailwind + TypeScript
+# Landing Page – Sass
 
-Landing page desarrollada con **Tailwind CSS** y **TypeScript**, pensada como base escalable para integrar futuras funcionalidades, tecnologías o frameworks.
+Landing page desarrollada con **HTML5** y **Sass** como preprocesador CSS, pensada como base escalable para integrar futuras funcionalidades, tecnologías o frameworks.
 
 ## Demo del Proyecto
 
@@ -22,10 +22,10 @@ Landing page desarrollada con **Tailwind CSS** y **TypeScript**, pensada como ba
 
 ## Tecnologías utilizadas
 
-- **Tailwind CSS** (vía CDN con configuración extendida en el `<head>`).
 - **HTML5 semántico**.
-- **TypeScript** (configurado como dependencia de desarrollo).
-- Entorno preparado para escalar hacia herramientas como Vite o React.
+- **Sass** (preprocesador CSS compilado a CSS puro).
+- **CSS3** (resultado compilado).
+- Entorno preparado para integrarse con herramientas como Vite o Webpack si se desea escalar.
 
 ---
 
