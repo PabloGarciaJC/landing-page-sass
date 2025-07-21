@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `landingpagetailtype_pablogarciajc`
+-- Base de datos: `landingpagesass_pablogarciajc`
 --
 
 -- --------------------------------------------------------
@@ -111,7 +111,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`Id`, `Usuario`, `Password`, `NumeroDocumento`, `Nombres`, `Apellidos`, `Email`, `NroTelefono`, `Direccion`, `Pais`, `Ciudad`, `CodigoPostal`, `Rol`, `imagen`) VALUES
-(9, '', '$2y$04$97Un/HRwgfG2susq.BdKAeLuO2HhhUohiei0mZ44kJOv071F6GwUe', NULL, NULL, NULL, 'info@landingpagetailtype.es', NULL, NULL, NULL, NULL, NULL, '1', NULL);
+(9, '', '$2y$04$97Un/HRwgfG2susq.BdKAeLuO2HhhUohiei0mZ44kJOv071F6GwUe', NULL, NULL, NULL, 'info@landingpagesass.es', NULL, NULL, NULL, NULL, NULL, '1', NULL);
 
 --
 -- Índices para tablas volcadas

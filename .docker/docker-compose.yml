@@ -1,5 +1,5 @@
 services:
-  php_apache_landingpagetailtype:
+  php_apache_landingpagesass:
     build:
       context: .
       dockerfile: ./php_server/Dockerfile
@@ -63,8 +63,8 @@ services:
     entrypoint: ["phpunit", "--configuration", "/app/phpunit.xml"]
 
 networks:
-  network_landingpagetailtype:
+  network_landingpagesass:
     name: network_${PROJECT_NAME}
 
 volumes:
-  persistent-landingpagetailtype:
+  persistent-landingpagesass:
