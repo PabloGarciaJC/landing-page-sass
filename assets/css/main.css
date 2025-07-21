@@ -1,0 +1,234 @@
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav__link {
+  color: #4b5563;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.nav__link:hover {
+  color: #c29b76;
+}
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 1rem;
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  .nav.active {
+    display: flex;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.btn--primary {
+  background: #c29b76;
+  color: #ffffff;
+}
+.btn--primary:hover {
+  background: #8b5e3c;
+}
+.btn--secondary {
+  background: #ffffff;
+  color: #c29b76;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.btn--secondary:hover {
+  background: hsl(0, 0%, 105%);
+}
+.btn--full {
+  display: block;
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  padding: 7rem 0;
+  text-align: center;
+  background: url("../img-home.jpg") center/cover no-repeat;
+  color: #ffffff;
+}
+.hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hero__title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero__text {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title--white {
+  color: #ffffff;
+}
+
+.servicios {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+.servicios__grid {
+  display: grid;
+  gap: 2.5rem;
+}
+@media (min-width: 768px) {
+  .servicios__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.servicio {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
+}
+.servicio:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.servicio__title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.servicio__desc {
+  color: #4b5563;
+}
+
+.portafolio {
+  padding: 5rem 0;
+  background: #8b5e3c;
+}
+.portafolio__grid {
+  display: grid;
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .portafolio__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.portafolio__item {
+  display: block;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+.portafolio__item img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+.portafolio__item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.portafolio__info {
+  padding: 1.25rem;
+}
+.portafolio__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+.portafolio__desc {
+  color: #374151;
+}
+
+.nosotros {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+.nosotros__content {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto;
+}
+.nosotros__text {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.contacto {
+  padding: 6rem 0;
+  background: #8b5e3c;
+  color: #ffffff;
+}
+.contacto__content {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.contacto__text {
+  color: hsl(0, 0%, 120%);
+  margin-bottom: 1.5rem;
+}
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  background: #ffffff;
+  color: #111827;
+}
+.input::placeholder {
+  color: #4b5563;
+}
+.input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(194, 155, 118, 0.5);
+}
+
+.footer {
+  background: #5c3b22;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+}
+
+/*# sourceMappingURL=main.css.map */

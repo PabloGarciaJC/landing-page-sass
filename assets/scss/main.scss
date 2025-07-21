@@ -1,0 +1,265 @@
+@use 'sass:color';
+@use 'variables' as *;
+
+// main.scss
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+
+  &__link {
+    color: $gray-600;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $madera-clara;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 1rem;
+    background: $white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba($black, 0.1);
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+
+  &--primary {
+    background: $madera-clara;
+    color: $white;
+
+    &:hover {
+      background: $madera-oscura;
+    }
+  }
+
+  &--secondary {
+    background: $white;
+    color: $madera-clara;
+    box-shadow: 0 4px 10px rgba($black, 0.2);
+
+    &:hover {
+      background: color.adjust($white, $lightness: 5%);
+    }
+  }
+
+  &--full {
+    display: block;
+    width: 100%;
+  }
+}
+
+.hero {
+  position: relative;
+  padding: 7rem 0;
+  text-align: center;
+  background: url('../img-home.jpg') center/cover no-repeat;
+  color: $white;
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 4px rgba($black, 0.5);
+  }
+
+  &__text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 4px rgba($black, 0.5);
+  }
+
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba($black, 0.7);
+  }
+}
+
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+
+  &--white {
+    color: $white;
+  }
+}
+
+.servicios {
+  padding: 6rem 0;
+  background: $white;
+
+  &__grid {
+    display: grid;
+    gap: 2.5rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+.servicio {
+  background: $gray-50;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba($black, 0.05);
+  transition: box-shadow 0.3s;
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba($black, 0.1);
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  &__desc {
+    color: $gray-600;
+  }
+}
+
+.portafolio {
+  padding: 5rem 0;
+  background: $madera-oscura;
+
+  &__grid {
+    display: grid;
+    gap: 2rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    display: block;
+    background: $white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba($black, 0.1);
+    transition: box-shadow 0.3s;
+
+    img {
+      width: 100%;
+      height: 12rem;
+      object-fit: cover;
+    }
+
+    &:hover {
+      box-shadow: 0 8px 16px rgba($black, 0.2);
+    }
+  }
+
+  &__info {
+    padding: 1.25rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: $gray-900;
+  }
+
+  &__desc {
+    color: $gray-700;
+  }
+}
+
+.nosotros {
+  padding: 6rem 0;
+  background: $white;
+
+  &__content {
+    max-width: 700px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: $gray-700;
+  }
+}
+
+.contacto {
+  padding: 6rem 0;
+  background: $madera-oscura;
+  color: $white;
+
+  &__content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__text {
+    color: color.adjust($white, $lightness: 20%);
+    margin-bottom: 1.5rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid $gray-300;
+  border-radius: 0.5rem;
+  background: $white;
+  color: $gray-900;
+
+  &::placeholder {
+    color: $gray-600;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($madera-clara, 0.5);
+  }
+}
+
+.footer {
+  background: $madera-mas-oscura;
+  color: $white;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.875rem;
+}

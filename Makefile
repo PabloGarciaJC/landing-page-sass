@@ -104,4 +104,10 @@ shell:
 compile-ts:
 	$(DOCKER_COMPOSE) exec php_apache_$(PROJECT_PREFIX) env NO_UPDATE_NOTIFIER=1 npx tsc app.ts
 
+.PHONY: compile-sass
+compile-sass:
+	$(DOCKER_COMPOSE) exec php_apache_$(PROJECT_PREFIX) sass assets/scss/main.scss assets/css/main.css
+
+
+
 
