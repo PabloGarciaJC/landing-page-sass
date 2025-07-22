@@ -169,6 +169,14 @@ img {
   color: #333;
 }
 
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #007BFF;
+  text-align: center;
+}
+
 .portafolio {
   background: #007BFF;
   padding: 4rem 0;
@@ -185,22 +193,30 @@ img {
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
 }
 .portafolio__item:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 .portafolio__item img {
   width: 100%;
+  display: block;
 }
-.portafolio__item__info {
+.portafolio__item-info {
   padding: 1rem;
 }
-.portafolio__item__title {
+.portafolio__item-title {
   margin: 0.5rem 0;
+  font-weight: bold;
 }
-.portafolio__item__desc {
+.portafolio__item-desc {
   font-size: 0.9rem;
+  color: hsl(0, 0%, -20%);
 }
 
 .nosotros {
