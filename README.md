@@ -4,7 +4,7 @@ Landing page desarrollada con **HTML5** y **Sass** como preprocesador CSS, pensa
 
 ## Demo del Proyecto
 
-[https://landing-page-sass.pablogarciajc.com/](https://landing-page-sass.pablogarciajc.com/)
+[https://landing-page-sass.com/](https://landing-page-sass.pablogarciajc.com/)
 
 | ![Imagen 1](https://pablogarciajc.com/wp-content/uploads/2025/07/landing-page-sass1.webp) | ![Imagen 2](https://pablogarciajc.com/wp-content/uploads/2025/07/landing-page-sass2.webp) |
 |-----------|-----------|
