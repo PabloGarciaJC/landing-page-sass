@@ -47,6 +47,8 @@ Este proyecto utiliza **Sass** como preprocesador CSS para facilitar la escritur
 
 Gracias a estas características, el código CSS generado es limpio, eficiente y fácil de mantener, facilitando futuras escalas y modificaciones.
 
+---
+
 ## Instalación
 
 ### Requisitos Previos
@@ -64,8 +66,7 @@ Gracias a estas características, el código CSS generado es limpio, eficiente y
    - **`make up`**: Levanta la aplicación y sus contenedores asociados.
    - **`make down`**: Detiene los contenedores y apaga la aplicación.
    - **`make shell`**: Ingresa al contenedor para interactuar directamente con el sistema en su entorno de ejecución.
-   - **`make install-dependencies`**: Instala todas las dependencias necesarias para disponer del sistema de logs y ejecutar pruebas.
-   - **`make init-test`**: Ejecuta las pruebas unitarias y de integración.
+   - **`make compile-sass`**: Compila Sass
 
 4. Además de estos comandos, dentro del archivo **Makefile** puedes encontrar otros comandos que te permitirán interactuar de manera más específica con los contenedores y los diferentes servicios que conforman la aplicación.
 
