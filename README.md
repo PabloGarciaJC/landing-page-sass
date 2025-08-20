@@ -16,7 +16,6 @@ Landing page desarrollada con **HTML5** y **Sass** como preprocesador CSS, pensa
 - Menú de navegación adaptable para dispositivos móviles y escritorio.
 - Secciones integradas: Inicio, Nosotros, Servicios, Portafolio y Contacto.
 - Formulario de contacto estilizado.
-- Estilos personalizados usando configuración extendida de Tailwind (via CDN).
 
 ---
 
