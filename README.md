@@ -6,7 +6,7 @@ Landing page desarrollada con **HTML5** y **Sass** como preprocesador CSS, pensa
 
 [https://landing-page-sass.com/](https://landing-page-sass.pablogarciajc.com/)
 
-| ![Imagen 1](https://pablogarciajc.com/wp-content/uploads/2025/07/landing-page-sass1.webp) | ![Imagen 2](https://pablogarciajc.com/wp-content/uploads/2025/07/landing-page-sass2.webp) |
+| ![Imagen 1](https://pablogarciajc.com/wp-content/uploads/2025/09/landing-page-sass-11_11.webp) | ![Imagen 2](https://pablogarciajc.com/wp-content/uploads/2025/09/landing-page-sass-22_11.webp) |
 |-----------|-----------|
 
 ---
