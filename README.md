@@ -1,4 +1,4 @@
-# Landing Page – Sass
+# Landing Page (Sass)
 
 Landing page desarrollada con **HTML5** y **Sass** como preprocesador CSS, pensada como base escalable para integrar futuras funcionalidades, tecnologías o frameworks.
 
